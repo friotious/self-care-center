@@ -97,9 +97,12 @@ body {
   align-items: center;
 }
 
-#buddhapic {
-
+.buddhaPic {
   height: 60px;
+}
+
+.hidden {
+  display: none;
 }
 
 
