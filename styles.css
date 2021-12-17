@@ -1,8 +1,131 @@
-/* font-family: 'Quicksand', sans-serif;
-COLORS
-light-yellow - #f7e4bf;
+html {
+  font-family: 'Quicksand', sans-serif;
+  height: 100%;
+  background-image: linear-gradient(#134d71, #78a7c6, #f7e4bf);
+}
+
+body {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+ h1 {
+   margin-bottom: 75px;
+   color: white;
+ }
+
+ h2 {
+   color: white;
+   margin: 10px;
+ }
+
+ /* .wrapper {
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   align-items: center
+ } */
+
+.select-message-box {
+
+  font-style: italic;
+  background: #ffffff;
+  width: 700px;
+  height: 100px;
+  border-radius: 10px;
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10%;
+
+  display: flex;
+  flex-direction: column;
+  /* align-items: center */
+   }
+
+.inputs {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 15px;
+
+}
+
+.radio-buttons {
+  /* vertical-align: middle; */
+
+  /* width: 700px;
+  height: 50px; */
+}
+
+.receive-message-button {
+
+  text-align: center;
+  font-size: 15px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+  padding-bottom: 25px;
+
+}
+
+.btn-box {
+  color: white;
+  background-color: #134d71;
+  border-radius: 5px;
+  height: 30px;
+  width: 225px;
+}
+
+.quote-box {
+  background: #ffffff;
+  width: 900px;
+  height: 120px;
+  border-radius: 10px;
+  /* margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto; */
+}
+
+.quote-box {
+  color: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#buddhapic {
+
+  height: 60px;
+}
+
+
+
+/* .input-field {
+
+  /* display: flex;
+  justify-content: space-between; */
+
+
+
+
+/* .receive-message-button {
+
+/* display: flex;
+align-items: center;
+justify-content: center; */
+
+
+
+
+
+
+
+/* light-yellow - #f7e4bf;
 light-blue - #78a7c6;
 dark-blue - #134d71;
 white - #ffffff;
-black - #000000;
-*/
+black - #000000; */
