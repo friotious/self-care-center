@@ -84,6 +84,8 @@ body {
   width: 900px;
   height: 120px;
   border-radius: 10px;
+  display: flex;
+  flex-direction: column;
   /* margin-top: auto;
   margin-left: auto;
   margin-right: auto;
@@ -103,6 +105,28 @@ body {
 
 .hidden {
   display: none;
+}
+
+button:hover {
+  background: darkslateblue;
+}
+
+.clearButton-box {
+  text-align: center;
+  font-size: 15px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+  padding-bottom: 25px;
+}
+
+.clearButton {
+  color: white;
+  background-color: #134d71;
+  border-radius: 5px;
+  height: 30px;
+  width: 225px;
 }
 
 

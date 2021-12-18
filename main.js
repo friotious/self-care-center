@@ -35,55 +35,85 @@ var mantras = [
 
 
 //////////// -- querySelectors -- /////////////////////////
+var buttonClearMessage = document.querySelector(".clearButton")
 var buttonReceiveMessage = document.querySelector(".btn-box")
 var buddhaPic = document.querySelector('.buddhaPic')
 var radioMantra = document.querySelector('#mantra-radio')
 var radioAffirmation = document.querySelector('#affirmation-radio')
 var quoteBox = document.querySelector(".quoteBox")
 
+
 //////////// -- addEventListeners -- //////////////////////
 buttonReceiveMessage.addEventListener('click', displayMessage)
-radioMantra.addEventListener('checked', printMantra)
-radioAffirmation.addEventListener('checked', printAffirmation)
-
+// radioMantra.addEventListener('checked', printMantra)
+// radioAffirmation.addEventListener('checked', printAffirmation)
+buttonClearMessage.addEventListener('click', clearMessage)
 
 //////////// -- functions -- //////////////////////////////
 function getRandomIndex(array) {
   return Math.floor(Math.random() * array.length);
 }
 
+//------- clear message button --------------------//
+function addClearMessageButton() {
+  buttonClearMessage.classList.remove("hidden")
+}
+function removeClearMessageButton() {
+  buttonClearMessage.classList.toggle("hidden")
+}
 
-//-------- generate random quote----------------------------//
-function randomAff() {
+  //------ generate random quote--------------------//
+function randomAffirmations() {
   quoteBox.innerText = affirmations[getRandomIndex(affirmations)]
   }
+
 function randomMantra() {
   quoteBox.innerText = mantras[getRandomIndex(mantras)]
 }
 
-//-------- receive messages button functions ----------//
+  //------ receive messages button function----------//
 function removeBuddhaPic() {
   buddhaPic.classList.add("hidden");
 }
+function addBuddhaPic() {
+  buddhaPic.classList.remove("hidden")
+}
+
+
+
+
+// // Error - no radio buttons checked ----//
+// if (!radioAffirmation.checked && !radioMantra.checked) {
+//   quoteBox.innerText = "Ya gotta click sumpin'";
+//   return;
+// }
+// // Error - no radio buttons checked ----//
 
 
 //-------random affirmations------//
 function displayMessage() {
   removeBuddhaPic()
+  addClearMessageButton()
+
   //var emptyHTML = ""
-  if (radioAffirmation.checked === true) {
+     if (radioAffirmation.checked === true) {
      //emptyHTML +=
-     randomAff();
-   } else if (radioMantra.checked === true) {
+     randomAffirmations();
+     } if (radioMantra.checked === true) {
      //emptyHTML +=
-     randomMantra();
-   }
-   else {
-   quoteBox.innerText = "Please just check a button!!!"
+         randomMantra();
+       } else {
+   // quoteBox.innerText = "Please just check a button!!!"
 }
     // var emptyHTML = "";
     // emptyHTML += ``
 //quoteBox.innerText = emptyHTML
    }
 
-console.log(quoteBox.innerText)
+   function clearMessage() {
+     removeClearMessageButton();
+     addBuddhaPic();
+     quoteBox.innerText = ""
+
+
+   }
