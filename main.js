@@ -93,22 +93,26 @@ function addBuddhaPic() {
 //-------random affirmations------//
 function displayMessage() {
   removeBuddhaPic()
-  addClearMessageButton()
 
+// if (!radioAffirmation.checked && !radioMantra.checked) {
   //var emptyHTML = ""
      if (radioAffirmation.checked === true) {
      //emptyHTML +=
      randomAffirmations();
-     } if (radioMantra.checked === true) {
+     addClearMessageButton()
+   } else if (radioMantra.checked === true) {
      //emptyHTML +=
          randomMantra();
+         addClearMessageButton()
        } else {
-   // quoteBox.innerText = "Please just check a button!!!"
+   quoteBox.innerText = "Please just check a button!!!"
+   // removeClearMessageButton();
 }
     // var emptyHTML = "";
     // emptyHTML += ``
 //quoteBox.innerText = emptyHTML
    }
+
 
    function clearMessage() {
      removeClearMessageButton();
