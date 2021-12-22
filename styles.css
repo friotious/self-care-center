@@ -21,15 +21,7 @@ body {
    margin: 10px;
  }
 
- /* .wrapper {
-   text-align: center;
-   display: flex;
-   flex-direction: column;
-   align-items: center
- } */
-
 .select-message-box {
-
   font-style: italic;
   background: #ffffff;
   width: 700px;
@@ -39,36 +31,24 @@ body {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 10%;
-
   display: flex;
   flex-direction: column;
-  /* align-items: center */
-   }
+}
 
 .inputs {
   display: flex;
   justify-content: space-around;
   padding-top: 15px;
-
-}
-
-.radio-buttons {
-  /* vertical-align: middle; */
-
-  /* width: 700px;
-  height: 50px; */
 }
 
 .receive-message-button {
-
-  text-align: center;
+  align: center;
   font-size: 15px;
   border-radius: 4px;
   display: flex;
   justify-content: center;
   margin-top: 25px;
   padding-bottom: 25px;
-
 }
 
 .btn-box {
@@ -86,10 +66,6 @@ body {
   border-radius: 10px;
   display: flex;
   flex-direction: column;
-  /* margin-top: auto;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: auto; */
 }
 
 .quote-box {
@@ -128,28 +104,6 @@ button:hover {
   height: 30px;
   width: 225px;
 }
-
-
-
-/* .input-field {
-
-  /* display: flex;
-  justify-content: space-between; */
-
-
-
-
-/* .receive-message-button {
-
-/* display: flex;
-align-items: center;
-justify-content: center; */
-
-
-
-
-
-
 
 /* light-yellow - #f7e4bf;
 light-blue - #78a7c6;
