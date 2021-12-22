@@ -33,7 +33,6 @@ var mantras = [
 'I am the sky, the rest is weather.',
 ]
 
-
 //////////// -- querySelectors -- /////////////////////////
 var buttonClearMessage = document.querySelector(".clearButton")
 var buttonReceiveMessage = document.querySelector(".btn-box")
@@ -42,11 +41,8 @@ var radioMantra = document.querySelector('#mantra-radio')
 var radioAffirmation = document.querySelector('#affirmation-radio')
 var quoteBox = document.querySelector(".quoteBox")
 
-
 //////////// -- addEventListeners -- //////////////////////
 buttonReceiveMessage.addEventListener('click', displayMessage)
-// radioMantra.addEventListener('checked', printMantra)
-// radioAffirmation.addEventListener('checked', printAffirmation)
 buttonClearMessage.addEventListener('click', clearMessage)
 
 //////////// -- functions -- //////////////////////////////
@@ -79,45 +75,22 @@ function addBuddhaPic() {
   buddhaPic.classList.remove("hidden")
 }
 
-
-
-
-// // Error - no radio buttons checked ----//
-// if (!radioAffirmation.checked && !radioMantra.checked) {
-//   quoteBox.innerText = "Ya gotta click sumpin'";
-//   return;
-// }
-// // Error - no radio buttons checked ----//
-
-
 //-------random affirmations------//
 function displayMessage() {
   removeBuddhaPic()
-
-// if (!radioAffirmation.checked && !radioMantra.checked) {
-  //var emptyHTML = ""
      if (radioAffirmation.checked === true) {
-     //emptyHTML +=
      randomAffirmations();
      addClearMessageButton()
-   } else if (radioMantra.checked === true) {
-     //emptyHTML +=
+     }  else if (radioMantra.checked === true) {
          randomMantra();
          addClearMessageButton()
-       } else {
-   quoteBox.innerText = "Please just check a button!!!"
-   // removeClearMessageButton();
+        } else {
+            quoteBox.innerText = "Please just check a button!!!"
+          }
 }
-    // var emptyHTML = "";
-    // emptyHTML += ``
-//quoteBox.innerText = emptyHTML
-   }
 
-
-   function clearMessage() {
+function clearMessage() {
      removeClearMessageButton();
      addBuddhaPic();
      quoteBox.innerText = ""
-
-
-   }
+}
