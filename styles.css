@@ -54,6 +54,7 @@ body {
 .btn-box {
   color: white;
   background-color: #134d71;
+  transition: background-color .3s;
   border-radius: 5px;
   height: 30px;
   width: 225px;
@@ -84,7 +85,7 @@ body {
 }
 
 button:hover {
-  background: darkslateblue;
+  background-color: #78a7c6;
 }
 
 .clearButton-box {
@@ -100,6 +101,7 @@ button:hover {
 .clearButton {
   color: white;
   background-color: #134d71;
+  transition: background-color .3s;
   border-radius: 5px;
   height: 30px;
   width: 225px;
