@@ -1,3 +1,4 @@
+/* ---GLobal--- */
 html {
   font-family: 'Quicksand', sans-serif;
   height: 100%;
@@ -21,6 +22,11 @@ body {
    margin: 10px;
  }
 
+ button:hover {
+   background-color: #78a7c6;
+ }
+
+/* ---Show Aff/Mantra Message Box--- */
 .select-message-box {
   font-style: italic;
   background: #ffffff;
@@ -60,18 +66,15 @@ body {
   width: 225px;
 }
 
+/* ---Quote Message Box--- */
 .quote-box {
+  color: #000000;
   background: #ffffff;
   width: 900px;
   height: 120px;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
-}
-
-.quote-box {
-  color: #000000;
-  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -81,11 +84,7 @@ body {
 }
 
 .hidden {
-  display: none;
-}
-
-button:hover {
-  background-color: #78a7c6;
+  display: none!important;
 }
 
 .clearButton-box {
